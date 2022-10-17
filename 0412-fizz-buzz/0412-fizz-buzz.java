@@ -3,16 +3,14 @@ class Solution {
         List <String> answers = new ArrayList<>(n);
         
         for(int i = 1 ; i <= n ; i++){
-         Boolean diviedBy3=i%3==0;
-         Boolean diviedBy5=i%5==0;
     
-        if(diviedBy3 && diviedBy5){
+        if(i%3==0 && i%5==0){
              answers.add("FizzBuzz");
         }
-        else if(diviedBy3 ){
+        else if(i%3==0 ){
              answers.add("Fizz");
         }
-        else if(diviedBy5){
+        else if(i%5==0){
              answers.add("Buzz");
         }else
         {
