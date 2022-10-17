@@ -21,7 +21,7 @@ class Solution {
 //         }
 //         return array.get(size/2);
       
-             ListNode mid=head;
+        ListNode mid=head;
         ListNode end=head;
         while(end!=null && end.next!=null){
             mid=mid.next;
