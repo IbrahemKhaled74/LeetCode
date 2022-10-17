@@ -11,7 +11,17 @@
  
 class Solution {
     public ListNode middleNode(ListNode head) {
-        ListNode mid=head;
+//         ArrayList<ListNode> array =new ArrayList<>();
+        
+//         int size =0;
+//         while (head!=null){
+//             array.add(head);
+//                 head=head.next;
+//             size++;
+//         }
+//         return array.get(size/2);
+      
+             ListNode mid=head;
         ListNode end=head;
         while(end!=null && end.next!=null){
             mid=mid.next;
@@ -21,5 +31,6 @@ class Solution {
         
         
     }
+        
+    }
     
-}
