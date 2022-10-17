@@ -16,7 +16,7 @@ class Solution {
              answers.add("Buzz");
         }else
         {
-         answers.add(String.valueOf(i));
+         answers.add(""+i);
         }
         }
     return answers;
