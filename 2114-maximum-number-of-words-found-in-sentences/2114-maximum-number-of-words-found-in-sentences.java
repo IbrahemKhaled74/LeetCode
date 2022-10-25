@@ -1,14 +1,13 @@
 class Solution {
     public int mostWordsFound(String[] sentences) {
-        int count=0;
+        int max=0;
         for (String n :sentences ){
-            
-            if(n.split(" ").length>count){
-                count=n.split(" ").length;
+            if(n.split(" ").length>max){
+                max=n.split(" ").length;
             }
             
         }
-        return count;
+        return max;
         
     }
 }
