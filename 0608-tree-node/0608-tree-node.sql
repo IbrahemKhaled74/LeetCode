@@ -9,7 +9,7 @@ SELECT id , 'Inner' as type
 FROM Tree 
 WHERE id in 
 (
-    SELECT p_id 
+    SELECT DISTINCT p_id 
     FROM Tree
     WHERE p_id  IS NOT NULL
 )
@@ -21,7 +21,7 @@ SELECT id , 'Leaf' as type
 FROM Tree 
 WHERE id not in 
 (
-    SELECT p_id 
+    SELECT DISTINCT p_id 
     FROM Tree
     WHERE p_id  IS NOT NULL
 )
