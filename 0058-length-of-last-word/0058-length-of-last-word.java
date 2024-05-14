@@ -6,7 +6,7 @@ class Solution {
         int length = 0 ;
         String word=s.trim();
 
-        for(int  i = 0 ; i<word.length() ; i++){
+        for(int i = 0 ; i < word.length() ; i++){
             if(word.charAt(i) !=' '){
                 length++;
             }else{
